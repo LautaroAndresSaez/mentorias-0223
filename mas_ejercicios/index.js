@@ -15,7 +15,7 @@ la función debe retornar:
 const javier = {
   nombre: "Javier",
   apellido: "Miguel",
-  edad: 25,
+  edad: 18,
   cursos: ["JS"],
 };
 
