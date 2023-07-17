@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Hola mundo!",
+    "noticia": "aoeuoeu",
+    "resumen": "soy el resumen",
+    "categoria": "economía",
+    "autor": "LS"
+  },
+  {
+    "titulo": "hola",
+    "noticia": "aoeuoeu",
+    "resumen": "soy el resumen",
+    "categoria": "economía",
+    "autor": "LS"
+  },
+  {
+    "titulo": "hola",
+    "noticia": "aoeuoeu",
+    "resumen": "soy el resumen",
+    "categoria": "economía",
+    "autor": "LS",
+    "id": 1
+  }
+]

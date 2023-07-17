@@ -27,10 +27,8 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/json", (req, res) => {
-  res.send({
-    saludo: "hello world!",
-  });
+app.get("/productos", (req, res) => {
+  res.send(productos);
 });
 
 app.listen(PORT, () => {
