@@ -16,7 +16,9 @@ const findAll = (req, res) => {
 const deleteNoticia = (req, res) => {
   const { id } = req.params;
   const noticias = readNoticias();
-  const noticiasNuevas = noticias.filter((noticia) => noticia.id !== id);
+  const noticiasNuevas = noticias.filter(
+    (noticia) => noticia.id !== Number(id)
+  );
   saveNoticias(noticiasNuevas);
   res.send(`Noticia ${id} eliminada`);
 };
@@ -26,7 +28,7 @@ const updateNoticia = (req, res) => {
   const nuevosDatos = req.body;
   const noticias = readNoticias();
   const noticiasNuevas = noticias.map((noticia) => {
-    if (noticia.id === id) {
+    if (noticia.id === Number(id)) {
       return {
         ...noticias,
         ...nuevosDatos,
